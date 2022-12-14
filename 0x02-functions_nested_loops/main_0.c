@@ -1,5 +1,4 @@
 #include "main.h"
-#include "8-24_hours.c"
 
 /**
  * main - check the code for Holberton School students.
