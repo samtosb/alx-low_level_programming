@@ -15,7 +15,7 @@ int main(void)
 		next = a + b;
 		a = b;
 		b = next;
-		ptintf("%lu", next);
+		tintf("%lu", next);
 
 		if (i < 49)
 		{
