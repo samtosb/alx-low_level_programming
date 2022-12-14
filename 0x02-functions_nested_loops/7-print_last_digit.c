@@ -8,14 +8,14 @@
  */
 int print_last_digit(int n)
 {
-	int las_digit;
+	int last_digit;
 
 	last_digit = n % 10;
 	if (last_digit < 0)
 	{
 		last_digit = last_digit * -1;
 	}
-	-putcha(last_digit + '0');
-	return (laast_digit);
+	-putchar(last_digit + '0');
+	return (last_digit);
 
 }
