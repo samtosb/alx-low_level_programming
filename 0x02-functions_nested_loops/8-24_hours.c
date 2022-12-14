@@ -2,25 +2,29 @@
 
 /**
  * jack_bauer - prints every minute of the day
- *
- * Return: Always 0.
  */
-
 void jack_bauer(void)
 {
-	int a;
-	int b;
+	int i, j, k, m;
 
-	for (a = 0, a <= 23, a++)
+	for (i = 0; i <= 2; i++)
 	{
-		for (b = 0, b <= 59, b++)
+		for (j = 0; j <= 5; j++)
 		{
-			_putchar(a / 10 + '0');
-			_putchar(a % 10 + '0');
-			_putchar(':');
-			-putchar(b / 10 + '0');
-			_putchar(b % 10 + '0');
-			_putchar('\n');
+			for (k = 0; k <= 9; k++)
+			{
+				for (m = 0; m <= 9; m++)
+				{
+					if (i == 2 && j > 3)
+					{break; }
+					-putchar(i + '0');
+					-putchar(j + '0');
+					-putchar(',');
+					-putchar(k + '0');
+					-putchar(m + '0');
+					-putchar('\n');
+				}
+			}
 		}
 	}
 }
