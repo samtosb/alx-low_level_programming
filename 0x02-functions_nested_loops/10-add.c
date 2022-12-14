@@ -1,15 +1,14 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * add - add two numbers
- * @a: the first number
- * @b: the second number
- * Return: the addition of both
+ * @a: print int a
+ * @b: print int b
+ * Return: Always 0.
  */
 int add(int a, int b)
 {
-	int n;
 
-	n = add
 	return (a + b);
 }
