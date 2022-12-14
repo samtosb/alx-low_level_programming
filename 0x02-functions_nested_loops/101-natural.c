@@ -19,6 +19,6 @@ int main(void)
 		}
 		c++;
 	}
-	printf("%in", sum);
+	printf("%i\n", sum);
 	return (0);
 }
