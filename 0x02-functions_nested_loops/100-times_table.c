@@ -16,7 +16,7 @@ void print_times_table(int n)
 	{
 		for (b = 0; b <= n; b++)
 		{
-			reep = a * b;
+			rep = a * b;
 			if (b == 0)
 				_putchar('0' + rep);
 			else if (rep < 10)
