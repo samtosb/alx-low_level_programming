@@ -18,12 +18,12 @@ void jack_bauer(void)
 				{
 					if (i == 2 && j > 3)
 					{break; }
-					-putchar(i + '0');
-					-putchar(j + '0');
-					-putchar(',');
-					-putchar(k + '0');
-					-putchar(m + '0');
-					-putchar('\n');
+					_putchar(i + '0');
+					_putchar(j + '0');
+					_putchar(',');
+					_putchar(k + '0');
+					_putchar(m + '0');
+					_putchar('\n');
 				}
 			}
 		}
