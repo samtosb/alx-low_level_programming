@@ -1,8 +1,8 @@
-#ifndef HOLBERTON_H_INCLUDED
-#define HOLBERTON_H_INCLUDED
+#ifndef MAIN_H
+#define MAIN_H
 
 int _putchar(char c);
-
+:
 int _issuper(int c);
 int _isdigit(int c);
 
