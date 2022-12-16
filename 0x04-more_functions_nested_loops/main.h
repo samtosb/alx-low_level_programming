@@ -2,8 +2,8 @@
 #define MAIN_H
 
 int _putchar(char c);
-:
-int _issuper(int c);
+
+int _isuper(int c);
 int _isdigit(int c);
 
 int null(int a, int b);
