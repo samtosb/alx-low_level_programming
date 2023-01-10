@@ -3,23 +3,32 @@
 #include <stdlib.h>
 
 /**
- * main - check the code for ALX School students.
+ * *_strdup - copies the string given as parameter
+ * @str: string to duplicate
  *
- * Return: Always 0.
+ * Return: pointer to the copied string (Success), NULL (Error)
  */
-int main(void)
+char *_strdup(char *str)
 {
-	char *s;
+	char *duplicate;
+	unsigned int i, len;
 
-	s = _strdup(" ");
+	i = 0;
+	len = 0;
 
-	if (s == NULL)
-	{
-		printf("failed to allocate memory\n");
-		return (1);
-	}
-	printf("%s\n", s);
-	free(s);
+	if (str == NULL)
+		return (NULL);
 
-	return (0);
+	while (str[len])
+		len++;
+	duplicate = malloc(sizeof(char) * (len + 1));
+
+	if (duplicate == NULL)
+		return (NULL);
+
+	while ((duplicate[i] = str[i]) != '\0')
+		i++;
+
+	return (duplicate);
 }
+
