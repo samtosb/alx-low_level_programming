@@ -1,26 +1,30 @@
-#include "main.h"
+#ifndef DOG
+#define DOG
 
 /**
- * _strcat - concat 2 string
- * @dest:char
- * @src:char
- * Return:char
+ * struct dog - dog class
+ *
+ * @name: Name of the dog
+ *
+ * @age: Age of the dog
+ *
+ * @owner: Owner of the dog
  */
-char *_strcat(char *dest, char *src)
+
+struct dog
 {
-	char *s = dest;
+	char *name;
+	float age;
+	char *owner;
+};
 
-	while (*dest != '\0')
-	{
-		dest++;
-	}
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 
-	while (*src != '\0')
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
-	*dest = '\0';
-	return (s);
-}
+typedef struct dog dog_t;
+
+dog_t *new_dog(char *name, float age, char *owner);
+
+void free_dog(dog_t *d);
+
+#endif
