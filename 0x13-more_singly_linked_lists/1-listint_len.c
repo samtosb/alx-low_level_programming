@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdio.h>
+
 /**
  * listint_len - the number of elemeents in a linked listint-t list
  *
