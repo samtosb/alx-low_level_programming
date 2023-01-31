@@ -4,7 +4,7 @@
 /**
  * delete_nodeint_at_index - deletes the node at index
  * @head: double pointer
- * @idex: index of the node
+ * @index: index of the node
  *
  * Return: pointer to the index node
  */
