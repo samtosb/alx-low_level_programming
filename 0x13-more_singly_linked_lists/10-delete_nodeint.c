@@ -2,14 +2,13 @@
 #include <stdlib.h>
 
 /**
- * insert_nodeint_at_index - inserting a new node at a given position
+ * delete_nodeint_at_index - deletes the node at index
  * @head: double pointer
- * @idx: index of the node
- * @n: new node value
+ * @idex: index of the node
  *
- * Return: the address of new node
+ * Return: pointer to the index node
  */
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+int delete_nodeint_at_index(listint_t **head, unsigned int idex)
 {
 	unsigned int i;
 	listint_t *temp, *next;
